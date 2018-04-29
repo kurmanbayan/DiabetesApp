@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NkW-3o-FAE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="YP1-zK-PQz">
+            <objects>
+                <viewController id="NkW-3o-FAE" customClass="ProfileViewController" customModule="project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YBl-al-bXO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpP-up-1SG">
+                                <rect key="frame" x="161" y="408" width="52" height="30"/>
+                                <state key="normal" title="Log out"/>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="NkW-3o-FAE" eventType="touchUpInside" id="kDz-zw-0ez"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tz6-Vx-Yf3" firstAttribute="bottom" secondItem="cpP-up-1SG" secondAttribute="bottom" constant="180" id="EOm-vm-yiP"/>
+                            <constraint firstItem="cpP-up-1SG" firstAttribute="centerX" secondItem="tz6-Vx-Yf3" secondAttribute="centerX" id="qvN-QF-SYG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tz6-Vx-Yf3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="profile" id="1pM-Dj-8BA"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3u3-io-YDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile" width="26" height="27"/>
+    </resources>
+</document>
